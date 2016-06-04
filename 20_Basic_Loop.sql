@@ -9,9 +9,12 @@ BEGIN
 	LOOP
 		dbms_output.put_line(x);
 		x := x + 10;
+		-- One Method for control
 		IF x > 50 THEN
 			exit;
 		END IF;
+		-- OR the following is also the same
+		-- exit WHEN x > 50;
 	END LOOP;
 	-- after exit, control resumes here
 	dbms_output.put_line('After Exit x is: ' || x);
