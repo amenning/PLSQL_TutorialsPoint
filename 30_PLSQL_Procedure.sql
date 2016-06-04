@@ -18,3 +18,5 @@ BEGIN
 	greetings;
 END;
 /
+-- delete the standalone procedure
+DROP PROCEDURE greetings;
